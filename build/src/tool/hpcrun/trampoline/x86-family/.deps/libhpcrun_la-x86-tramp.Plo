@@ -1,0 +1,8 @@
+trampoline/x86-family/libhpcrun_la-x86-tramp.lo: \
+ ../../../../src/tool/hpcrun/trampoline/x86-family/x86-tramp.S \
+ /usr/include/stdc-predef.h \
+ /home/ax4/hpctoolkit/build/src/include/hpctoolkit-config.h
+
+/usr/include/stdc-predef.h:
+
+/home/ax4/hpctoolkit/build/src/include/hpctoolkit-config.h:

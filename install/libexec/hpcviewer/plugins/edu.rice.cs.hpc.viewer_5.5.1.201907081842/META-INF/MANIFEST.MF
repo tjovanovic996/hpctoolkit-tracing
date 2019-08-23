@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: edu.rice.cs.hpc.viewer
+Bundle-SymbolicName: edu.rice.cs.hpc.viewer; singleton:=true
+Require-Bundle: org.eclipse.ui,edu.rice.cs.hpc.data,org.swtchart,org.s
+ wtchart.ext
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Rice University
+Import-Package: com.graphbuilder.math,com.graphbuilder.math.func,edu.r
+ ice.cs.hpc.common.ui,edu.rice.cs.hpc.common.util,edu.rice.cs.hpc.data
+ .db,edu.rice.cs.hpc.data.experiment,edu.rice.cs.hpc.data.experiment.e
+ xtdata,edu.rice.cs.hpc.data.experiment.merge,edu.rice.cs.hpc.data.exp
+ eriment.metric,edu.rice.cs.hpc.data.experiment.scope,edu.rice.cs.hpc.
+ data.experiment.scope.filters,edu.rice.cs.hpc.data.experiment.scope.v
+ isitors,edu.rice.cs.hpc.data.experiment.source,edu.rice.cs.hpc.data.e
+ xperiment.xml,edu.rice.cs.hpc.data.filter,edu.rice.cs.hpc.data.framew
+ ork,edu.rice.cs.hpc.data.util,edu.rice.cs.hpc.filter,edu.rice.cs.hpc.
+ filter.service,edu.rice.cs.hpc.filter.view,org.eclipse.core.filesyste
+ m,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.cor
+ e.runtime.jobs,org.eclipse.core.runtime.preferences,org.eclipse.equin
+ ox.app,org.eclipse.jface.text,org.eclipse.jface.util,org.eclipse.swt.
+ graphics,org.eclipse.ui.actions,org.eclipse.ui.application,org.eclips
+ e.ui.dialogs,org.eclipse.ui.editors.text,org.eclipse.ui.ide,org.eclip
+ se.ui.part,org.eclipse.ui.plugin,org.eclipse.ui.preferences,org.eclip
+ se.ui.texteditor,org.osgi.framework,org.osgi.service.prefs
+Bundle-Name: hpcviewer
+Bundle-Version: 5.5.1.201907081842
+Bundle-ClassPath: hpcviewer.jar,org.osgi.framework,org.osgi.service.pr
+ efs,org.swtchart,org.swtchart.ext
+Bundle-Activator: edu.rice.cs.hpc.viewer.framework.Activator
+
+

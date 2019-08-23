@@ -1,0 +1,60 @@
+unwind/x86-family/manual-intervals/libhpcrun_o-x86-intel-align64.o: \
+ ../../../../src/tool/hpcrun/unwind/x86-family/manual-intervals/x86-intel-align64.c \
+ /usr/include/stdc-predef.h /usr/include/string.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /usr/include/xlocale.h \
+ ../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval-fixup.h \
+ ../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h \
+ ../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/mem_manager.h \
+ ../../../../src/tool/hpcrun/unwind/common/interval_t.h \
+ ../../../../src/tool/hpcrun/unwind/common/unwind-interval.h \
+ ../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h \
+ ../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval-fixup.h:
+
+../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h:
+
+../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/mem_manager.h:
+
+../../../../src/tool/hpcrun/unwind/common/interval_t.h:
+
+../../../../src/tool/hpcrun/unwind/common/unwind-interval.h:
+
+../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h:
+
+../../../../src/tool/hpcrun/unwind/x86-family/x86-unwind-interval.h:

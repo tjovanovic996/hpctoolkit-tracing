@@ -1,0 +1,245 @@
+'\" t
+.\" Manual page created with latex2man on Thu Aug  8 13:41:15 CDT 2019
+.\" NOTE: This file is generated, DO NOT EDIT.
+.de Vb
+.ft CW
+.nf
+..
+.de Ve
+.ft R
+
+.fi
+..
+.TH "HPCSTRUCT" "1" "2018/07/05" "The HPCToolkit Performance Tools " "The HPCToolkit Performance Tools "
+.SH NAME
+
+.PP
+hpcstruct
+recovers the static program structure of \fIfully optimized\fP
+object code for use with an \fBHPCToolkit\fP
+correlation tool. 
+In particular, hpcstruct,
+recovers source code procedures and loop nests, detects inlining, and associates procedures and loops with object code addresses. 
+See \fIhpctoolkit\fP(1)
+for an overview of \fBHPCToolkit\fP\&.
+.PP
+.SH SYNOPSIS
+
+.PP
+hpcstruct
+[\fBoptions\fP]
+\fIbinary\fP
+.PP
+Typical usage:
+.br
+.br
+\fB \fP\fB \fP\fB \fPhpcstruct
+\fIbinary\fP
+.br
+.br
+which creates basename(\fIbinary\fP).hpcstruct\&.
+.PP
+.SH DESCRIPTION
+
+.PP
+Given an application binary or DSO \fIbinary\fP,
+hpcstruct
+recovers the program structure of its object code. 
+Program structure is a mapping of a program\&'s static source code structure to its object code. 
+By default, hpcstruct
+writes its results to the file \fIbasename(binary)\fP\&.hpcstruct\&.
+This file is typically passed to \fBHPCToolkit\fP\&'s
+attribution tool \fIhpcprof\fP(1)
+\&.
+.PP
+hpcstruct
+is designed to handle highly optimized binaries created from C, C++ and Fortran source code. 
+Because hpcstruct\&'s
+algorithms exploit a binary\&'s debugging information, 
+\fIbinary\fP
+should be compiled with options to produce as much debugging information as possible. 
+.PP
+.SH ARGUMENTS
+
+.PP
+.TP
+\fIbinary\fP
+ File containing a binary executable or dynamically linked library. 
+Note that hpcstruct
+does not recover program structure for libraries that \fIbinary\fP
+depends on. 
+To recover that structure, run hpcstruct on each dynamically linked library 
+or relink your program with static versions of the libraries. 
+.PP
+Default values for an option\&'s optional arguments are shown in {}\&. 
+.PP
+.SS OPTIONS: INFORMATIONAL
+.PP
+.TP
+\fB\-v\fP [\fIn\fP], \fB\-\-verbose\fP [\fIn\fP]
+ Verbose: generate progress messages to stderr at verbosity level \fIn\fP\&.
+{1} 
+.PP
+.TP
+\fB\-V\fP, \fB\-\-version\fP
+ Print version information. 
+.PP
+.TP
+\fB\-h\fP, \fB\-\-help\fP
+ Print help. 
+.PP
+.TP
+\fB\-\-debug\fP [\fIn\fP]
+ Print debugging messages at debug level \fIn\fP\&.
+{1} 
+.PP
+.TP
+\fB\-\-debug\-proc\fP \fIglob\fP
+ Print debugging messages for structure recovery of procedures matching the shell glob \fIglob\fP\&.
+.PP
+.SS OPTIONS: STRUCTURE RECOVERY
+.PP
+.TP
+\fB\-\-demangle\-library\fP \fIlibpath\fP
+ Use a function from the library at \fIlibpath\fP
+to demangle C++ names. 
+By default the library function used is __cxa_demangle\&.
+A different function may be specified with the \-\-demangle\-function
+option. 
+.PP
+.TP
+\fB\-\-demangle\-function\fP \fIfuncname\fP
+ Call the function named \fIfuncname\fP
+in the specified demangler library to demangle C++ names. 
+This option may only be given if the \-\-demangle\-library
+option is also given. 
+.PP
+.TP
+\fB\-I\fP \fIpath\fP, \fB\-\-include\fP \fIpath\fP
+ Use \fIpath\fP
+when resolving source file names. 
+This option is useful when a compiler records the same filename in different ways within the symbolic information. 
+(Yes, this does happen.) 
+For a recursive search, append a \&'+\&' after the last slash, e.g., /mypath/+\&.
+This option may appear multiple times. 
+.PP
+.TP
+\fB\-R\fP \fI\&'old\-path=new\-path\&'\fP, \fB\-\-replace\-path\fP \fI\&'old\-path=new\-path\&'\fP
+ Replace instances of \fIold\-path\fP
+with \fInew\-path\fP
+in all paths with \fIold\-path\fP
+is a prefix 
+(e.g., a profile\&'s load map and source code). 
+Use '\\' to escape instances of \&'=\&' within specified paths. 
+This option may appear multiple times. 
+.PP
+Use this when a profile or executable references files that have been relocated, 
+such as might occur with a file system change. 
+.PP
+.SS OPTIONS: OUTPUT
+.PP
+.TP
+\fB\-o\fP \fIfile\fP, \fB\-\-output\fP \fIfile\fP
+ Write results to \fIfile\fP\&.
+Use \&'\-\&' for stdout\&.
+{\fIbasename(binary)\fP\&.hpcstruct}
+.PP
+.TP
+\fB\-\-compact\fP
+ Generate compact output by eliminating extra white space. 
+.PP
+.TP
+\fB\-\-show\-gaps\fP
+ Write a text file describing all the "gaps" found by hpcstruct,
+i.e. address regions not identified as belonging to a code or data segment 
+by the ParseAPI parser used to analyze application executables. 
+The file is named \fIoutfile\fP\&.gaps,
+which by default is \fIappname\fP\&.hpcstruct.gaps\&.
+A gaps file can\&'t be written when \fIoutfile\fP
+is stdout\&.
+.PP
+.SH EXAMPLES
+
+.PP
+Assume we have collected profiling information for the (optimized) binary sweep3dsingle,
+compiled with debugging information. 
+We wish to recover program structure in the file sweep3dsingle.hpcstruct
+for use with \fIhpcprof\fP(1)
+\&.
+To do this, execute: 
+.PP
+.Vb
+    hpcstruct sweep3dsingle
+.Ve
+.PP
+By defult the output is placed in a file named sweep3dsingle.hpcstruct\&.
+.PP
+.SH NOTES
+
+.PP
+.TP
+1.
+For best results, an application binary should be compiled with debugging information. 
+To generate debugging information while also enabling optimizations, 
+use the appropriate variant of \-g for the following compilers: 
+.RS
+.TP
+.B *
+GNU compilers: \-g 
+.TP
+.B *
+Intel compilers: \-g \-debug inline_debug_info 
+.TP
+.B *
+IBM compilers: \-g \-fstandalone\-debug \-qfulldebug \-qfullpath 
+.TP
+.B *
+PGI compilers: \-gopt 
+.RE
+.RS
+.PP
+.RE
+.TP
+2.
+While hpcstruct attempts to guard against inaccurate debugging information,
+some compilers (notably PGI\&'s) often generate invalid and inconsistent debugging information. 
+Garbage in; garbage out. 
+.PP
+.TP
+3.
+C++ mangling is compiler specific. On non\-GNU platforms, hpcstruct
+tries both platform\&'s and GNU\&'s demangler. 
+.PP
+.SH SEE ALSO
+
+.PP
+\fIhpctoolkit\fP(1)
+\&.
+.PP
+.SH VERSION
+
+.PP
+Version: develop
+.PP
+.SH LICENSE AND COPYRIGHT
+
+.PP
+.TP
+Copyright 
+(C)2002\-2019, Rice University. 
+.TP
+License 
+See README.License\&.
+.PP
+.SH AUTHORS
+
+.PP
+Rice University\&'s HPCToolkit Research Group 
+.br
+Email: \fBhpctoolkit\-forum =at= rice.edu\fP
+.br
+WWW: \fBhttp://hpctoolkit.org\fP\&.
+.PP
+Thanks to Gabriel Marin and Jason Eckhardt. 
+.PP
+.\" NOTE: This file is generated, DO NOT EDIT.

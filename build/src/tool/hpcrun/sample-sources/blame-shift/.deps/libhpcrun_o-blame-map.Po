@@ -1,0 +1,79 @@
+sample-sources/blame-shift/libhpcrun_o-blame-map.o: \
+ ../../../../src/tool/hpcrun/sample-sources/blame-shift/blame-map.c \
+ /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ ../../../../src/tool/hpcrun/sample-sources/blame-shift/blame-map.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ ../../../../src/tool/hpcrun/messages/messages.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h \
+ ../../../../src/tool/hpcrun/messages/debug-flag.h \
+ ../../../../src/tool/hpcrun/messages/messages.flag-defns \
+ ../../../../src/tool/hpcrun/messages/fmt.h /usr/include/stdio.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h \
+ ../../../../src/tool/hpcrun/memory/hpcrun-malloc.h \
+ ../../../../src/tool/hpcrun/memory/valgrind.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+../../../../src/tool/hpcrun/sample-sources/blame-shift/blame-map.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+../../../../src/tool/hpcrun/messages/messages.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h:
+
+../../../../src/tool/hpcrun/messages/debug-flag.h:
+
+../../../../src/tool/hpcrun/messages/messages.flag-defns:
+
+../../../../src/tool/hpcrun/messages/fmt.h:
+
+/usr/include/stdio.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h:
+
+../../../../src/tool/hpcrun/memory/hpcrun-malloc.h:
+
+../../../../src/tool/hpcrun/memory/valgrind.h:

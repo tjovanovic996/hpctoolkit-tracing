@@ -1,0 +1,33 @@
+libHPCprof_lean_la-producer_wfq.lo: \
+ ../../../../src/lib/prof-lean/producer_wfq.c /usr/include/stdc-predef.h \
+ ../../../../src/lib/prof-lean/producer_wfq.h \
+ ../../../../src/lib/prof-lean/stdatomic.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h
+
+/usr/include/stdc-predef.h:
+
+../../../../src/lib/prof-lean/producer_wfq.h:
+
+../../../../src/lib/prof-lean/stdatomic.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/wchar.h:

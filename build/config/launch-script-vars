@@ -1,0 +1,14 @@
+# If this script can't find its install directory, then set 'prefix'
+# here.  This should only be necessary if you've moved both the script
+# and the install directory.
+#
+# Set 'hash_value' to empty to disable matching the hash with the
+# install directory.  Note: re-running configure creates a new hash.
+# If you copy this script out of its install directory and rerun
+# configure, then the hashes won't match.
+
+prefix='/home/ax4/hpctoolkit/build/../install'
+hash_value='170463507445c9c25023fbe8da98b7'
+
+VERSION='develop'
+git_version='master-gpu at 2019-08-06 (8967d2ae)'

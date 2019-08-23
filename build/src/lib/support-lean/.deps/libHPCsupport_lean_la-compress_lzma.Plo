@@ -1,0 +1,167 @@
+libHPCsupport_lean_la-compress_lzma.lo: \
+ ../../../../src/lib/support-lean/compress_lzma.c \
+ /usr/include/stdc-predef.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h \
+ /usr/include/stdlib.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma.h \
+ /usr/include/inttypes.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/version.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/base.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/vli.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/check.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/filter.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/bcj.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/delta.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/lzma12.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/container.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/stream_flags.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/block.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/index.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/index_hash.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/hardware.h \
+ ../../../../src/lib/support-lean/compress.h
+
+/usr/include/stdc-predef.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma.h:
+
+/usr/include/inttypes.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/version.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/base.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/vli.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/check.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/filter.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/bcj.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/delta.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/lzma12.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/container.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/stream_flags.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/block.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/index.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/index_hash.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/xz-5.2.4-52pq7xrp2axthcs4pcn34ha5g6vwfuy5/include/lzma/hardware.h:
+
+../../../../src/lib/support-lean/compress.h:

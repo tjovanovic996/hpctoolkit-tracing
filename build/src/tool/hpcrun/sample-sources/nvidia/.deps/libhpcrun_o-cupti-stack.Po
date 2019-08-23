@@ -1,0 +1,5 @@
+sample-sources/nvidia/libhpcrun_o-cupti-stack.o: \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-stack.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

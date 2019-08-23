@@ -1,0 +1,371 @@
+sample-sources/nvidia/libhpcrun_o-cupti-record.o: \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-record.c \
+ /usr/include/stdc-predef.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ ../../../../src/tool/hpcrun/memory/hpcrun-malloc.h \
+ ../../../../src/tool/hpcrun/memory/valgrind.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_version.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cuda_stdint.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_result.h \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-stack.h \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-record.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_activity.h \
+ /usr/local/cuda-10.1/include/cuda.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_callbacks.h \
+ /usr/local/cuda-10.1/include/builtin_types.h \
+ /usr/local/cuda-10.1/include/device_types.h \
+ /usr/local/cuda-10.1/include/crt/host_defines.h \
+ /usr/local/cuda-10.1/include/driver_types.h \
+ /usr/local/cuda-10.1/include/vector_types.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed/limits.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h \
+ /usr/local/cuda-10.1/include/surface_types.h \
+ /usr/local/cuda-10.1/include/texture_types.h /usr/include/string.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_events.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_metrics.h \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-node.h \
+ ../../../../src/tool/hpcrun/cct2metrics.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h \
+ ../../../../src/tool/hpcrun/metrics.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h \
+ /usr/include/bits/sys_errlist.h /usr/include/inttypes.h \
+ /home/ax4/hpctoolkit/build/../src/include/uint.h \
+ /home/ax4/hpctoolkit/build/src/include/hpctoolkit-config.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcfmt.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcrun-fmt.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio-buffer.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/allocator.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcfmt.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/lush/lush-support.h \
+ /usr/include/assert.h ../../../../src/tool/hpcrun/cct/cct.h \
+ /usr/include/ucontext.h /usr/include/sys/ucontext.h \
+ /usr/include/signal.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/sigthread.h \
+ ../../../../src/tool/hpcrun/unwind/common/backtrace.h \
+ ../../../../src/tool/hpcrun/utilities/ip-normalized.h \
+ ../../../../src/tool/hpcrun/loadmap.h \
+ ../../../../src/tool/hpcrun/fnbounds/fnbounds_file_header.h \
+ ../../../../src/tool/hpcrun/unwind/common/unw-datatypes.h \
+ ../../../../src/tool/hpcrun/unwind/x86-family/unw-datatypes-specific.h \
+ ../../../../src/tool/hpcrun/unwind/common/std_unw_cursor.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-x86_64.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-dynamic.h \
+ /home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-common.h \
+ ../../../../src/tool/hpcrun/unwind/common/fence_enum.h \
+ ../../../../src/tool/hpcrun/utilities/ip-normalized.h \
+ ../../../../src/tool/hpcrun/unwind/common/unwindr_info.h \
+ ../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/mem_manager.h \
+ ../../../../src/tool/hpcrun/unwind/common/interval_t.h \
+ ../../../../src/tool/hpcrun/unwind/common/backtrace_info.h \
+ ../../../../src/tool/hpcrun/frame.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/lush/lush-support.h \
+ ../../../../src/tool/hpcrun/../../lib/prof-lean/lush/lush-support.h \
+ ../../../../src/tool/hpcrun/utilities/ip-normalized.h \
+ ../../../../src/tool/hpcrun/unwind/common/../../frame.h \
+ ../../../../src/tool/hpcrun/unwind/common/fence_enum.h \
+ ../../../../src/tool/hpcrun/cct/cct_addr.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/bi_unordered_channel.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/unordered_stack.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/stacks.h \
+ ../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-api.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_driver_cbid.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_runtime_cbid.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/cupti_nvtx_cbid.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/generated_cuda_runtime_api_meta.h \
+ /usr/local/cuda-10.1/include/cuda_runtime_api.h \
+ /usr/local/cuda-10.1/include/builtin_types.h \
+ /usr/local/cuda-10.1/include/cuda_device_runtime_api.h \
+ /usr/local/cuda-10.1/extras/CUPTI/include/generated_cuda_meta.h \
+ /home/ax4/hpctoolkit/build/../src/lib/prof-lean/producer_wfq.h
+
+/usr/include/stdc-predef.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/wchar.h:
+
+../../../../src/tool/hpcrun/memory/hpcrun-malloc.h:
+
+../../../../src/tool/hpcrun/memory/valgrind.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_version.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cuda_stdint.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_result.h:
+
+../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-stack.h:
+
+../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-record.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_activity.h:
+
+/usr/local/cuda-10.1/include/cuda.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_callbacks.h:
+
+/usr/local/cuda-10.1/include/builtin_types.h:
+
+/usr/local/cuda-10.1/include/device_types.h:
+
+/usr/local/cuda-10.1/include/crt/host_defines.h:
+
+/usr/local/cuda-10.1/include/driver_types.h:
+
+/usr/local/cuda-10.1/include/vector_types.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed/limits.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/local/cuda-10.1/include/surface_types.h:
+
+/usr/local/cuda-10.1/include/texture_types.h:
+
+/usr/include/string.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_events.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_metrics.h:
+
+../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-node.h:
+
+../../../../src/tool/hpcrun/cct2metrics.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdbool.h:
+
+../../../../src/tool/hpcrun/metrics.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/inttypes.h:
+
+/home/ax4/hpctoolkit/build/../src/include/uint.h:
+
+/home/ax4/hpctoolkit/build/src/include/hpctoolkit-config.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcfmt.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcrun-fmt.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcio-buffer.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/allocator.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/hpcfmt.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/lush/lush-support.h:
+
+/usr/include/assert.h:
+
+../../../../src/tool/hpcrun/cct/cct.h:
+
+/usr/include/ucontext.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/sigthread.h:
+
+../../../../src/tool/hpcrun/unwind/common/backtrace.h:
+
+../../../../src/tool/hpcrun/utilities/ip-normalized.h:
+
+../../../../src/tool/hpcrun/loadmap.h:
+
+../../../../src/tool/hpcrun/fnbounds/fnbounds_file_header.h:
+
+../../../../src/tool/hpcrun/unwind/common/unw-datatypes.h:
+
+../../../../src/tool/hpcrun/unwind/x86-family/unw-datatypes-specific.h:
+
+../../../../src/tool/hpcrun/unwind/common/std_unw_cursor.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-x86_64.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-dynamic.h:
+
+/home/ax4/spack/opt/spack/linux-rhel7-x86_64/gcc-7.3.0/libunwind-2018.10.12-cye3frmwnhscdcfu6esi5t5fu3psfo4g/include/libunwind-common.h:
+
+../../../../src/tool/hpcrun/unwind/common/fence_enum.h:
+
+../../../../src/tool/hpcrun/utilities/ip-normalized.h:
+
+../../../../src/tool/hpcrun/unwind/common/unwindr_info.h:
+
+../../../../src/tool/hpcrun/unwind/common/binarytree_uwi.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/mem_manager.h:
+
+../../../../src/tool/hpcrun/unwind/common/interval_t.h:
+
+../../../../src/tool/hpcrun/unwind/common/backtrace_info.h:
+
+../../../../src/tool/hpcrun/frame.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/lush/lush-support.h:
+
+../../../../src/tool/hpcrun/../../lib/prof-lean/lush/lush-support.h:
+
+../../../../src/tool/hpcrun/utilities/ip-normalized.h:
+
+../../../../src/tool/hpcrun/unwind/common/../../frame.h:
+
+../../../../src/tool/hpcrun/unwind/common/fence_enum.h:
+
+../../../../src/tool/hpcrun/cct/cct_addr.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/bi_unordered_channel.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/unordered_stack.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/stdatomic.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/stacks.h:
+
+../../../../src/tool/hpcrun/sample-sources/nvidia/cupti-api.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_driver_cbid.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_runtime_cbid.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/cupti_nvtx_cbid.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/generated_cuda_runtime_api_meta.h:
+
+/usr/local/cuda-10.1/include/cuda_runtime_api.h:
+
+/usr/local/cuda-10.1/include/builtin_types.h:
+
+/usr/local/cuda-10.1/include/cuda_device_runtime_api.h:
+
+/usr/local/cuda-10.1/extras/CUPTI/include/generated_cuda_meta.h:
+
+/home/ax4/hpctoolkit/build/../src/lib/prof-lean/producer_wfq.h:

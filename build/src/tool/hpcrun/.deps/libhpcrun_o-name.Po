@@ -1,0 +1,30 @@
+libhpcrun_o-name.o: ../../../../src/tool/hpcrun/name.c \
+ /usr/include/stdc-predef.h /usr/include/strings.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/string.h \
+ ../../../../src/tool/hpcrun/name.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/strings.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/string.h:
+
+../../../../src/tool/hpcrun/name.h:

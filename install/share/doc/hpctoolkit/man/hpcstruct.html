@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- Manual page created with latex2man on Thu Aug  8 13:41:15 CDT 2019 --
+-- Author of latex2man: Juergen.Vollmer@informatik-vollmer.de --
+-- NOTE: This file is generated, DO NOT EDIT. -->
+<html>
+<head><title>HPCSTRUCT</title></head>
+<body bgcolor="white">
+<h1 align=center>
+hpcstruct:<br>
+Recovery of Static Program Structure 
+</h1>
+<h4 align=center>The HPCToolkit Performance Tools </h4>
+<h4 align=center>2018/07/05</h4>
+<h4 align=center>Version develop</h4>
+<p>
+<tt>hpcstruct</tt>
+recovers the static program structure of <em>fully optimized</em>
+object code for use with an <strong>HPCToolkit</strong>
+correlation tool. 
+In particular, <tt>hpcstruct</tt>,
+recovers source code procedures and loop nests, detects inlining, and associates procedures and loops with object code addresses. 
+See <a href="hpctoolkit.html"><em>hpctoolkit</em>(1)
+</a>for an overview of <strong>HPCToolkit</strong>.
+<p>
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#section_1">Synopsis </a></li>
+<li><a href="#section_2">Description </a></li>
+<li><a href="#section_3">Arguments </a>
+<ul>
+<li><a href="#section_4">Options: Informational </a></li>
+<li><a href="#section_5">Options: Structure recovery </a></li>
+<li><a href="#section_6">Options: Output </a></li>
+</ul>
+<li><a href="#section_7">Examples </a></li>
+<li><a href="#section_8">Notes </a></li>
+<li><a href="#section_9">See Also </a></li>
+<li><a href="#section_10">Version </a></li>
+<li><a href="#section_11">License and Copyright </a></li>
+<li><a href="#section_12">Authors </a></li>
+</ul>
+<p>
+<h2><a name="section_1">Synopsis</a></h2>
+
+<p>
+<tt>hpcstruct</tt>
+[<b>options</b>]
+<i>binary</i>
+<p>
+Typical usage:<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt>hpcstruct</tt>
+<i>binary</i>
+<br><br>
+
+which creates <tt>basename(</tt><i>binary</i><tt>).hpcstruct</tt>.
+<p>
+<h2><a name="section_2">Description</a></h2>
+
+<p>
+Given an application binary or DSO <i>binary</i>,
+<tt>hpcstruct</tt>
+recovers the program structure of its object code. 
+Program structure is a mapping of a program's static source code structure to its object code. 
+By default, <tt>hpcstruct</tt>
+writes its results to the file <em>basename(binary)</em><tt>.hpcstruct</tt>.
+This file is typically passed to <strong>HPCToolkit</strong>'s
+attribution tool <a href="hpcprof.html"><em>hpcprof</em>(1)
+</a>.
+<p>
+<tt>hpcstruct</tt>
+is designed to handle highly optimized binaries created from C, C++ and Fortran source code. 
+Because <tt>hpcstruct</tt>'s
+algorithms exploit a binary's debugging information, 
+<i>binary</i>
+should be compiled with options to produce as much debugging information as possible. 
+<p>
+<h2><a name="section_3">Arguments</a></h2>
+
+<p>
+<dl compact>
+<dt><i>binary</i>
+</dt>
+<dd> File containing a binary executable or dynamically linked library. 
+Note that <tt>hpcstruct</tt>
+does not recover program structure for libraries that <i>binary</i>
+depends on. 
+To recover that structure, run hpcstruct on each dynamically linked library 
+or relink your program with static versions of the libraries. 
+</dd>
+</dl>
+<p>
+Default values for an option's optional arguments are shown in {}. 
+<p>
+<h4><a name="section_4">Options: Informational</a></h4>
+
+<p>
+<dl compact>
+<dt><b>-v</b> [<i>n</i>], <b>--verbose</b> [<i>n</i>]
+</dt>
+<dd> 
+Verbose: generate progress messages to stderr at verbosity level <i>n</i>.
+{1} 
+<p>
+</dd>
+<dt><b>-V</b>, <b>--version</b>
+</dt>
+<dd> 
+Print version information. 
+<p>
+</dd>
+<dt><b>-h</b>, <b>--help</b>
+</dt>
+<dd> 
+Print help. 
+<p>
+</dd>
+<dt><b>--debug</b> [<i>n</i>]
+</dt>
+<dd> 
+Print debugging messages at debug level <i>n</i>.
+{1} 
+<p>
+</dd>
+<dt><b>--debug-proc</b> <i>glob</i>
+</dt>
+<dd> 
+Print debugging messages for structure recovery of procedures matching the shell glob <i>glob</i>.
+</dd>
+</dl>
+<p>
+<h4><a name="section_5">Options: Structure recovery</a></h4>
+
+<p>
+<dl compact>
+<p>
+<dt><b>--demangle-library</b> <i>libpath</i>
+</dt>
+<dd> 
+Use a function from the library at <em>libpath</em>
+to demangle C++ names. 
+By default the library function used is <tt>__cxa_demangle</tt>.
+A different function may be specified with the <tt>--demangle-function</tt>
+option. 
+<p>
+</dd>
+<dt><b>--demangle-function</b> <i>funcname</i>
+</dt>
+<dd> 
+Call the function named <em>funcname</em>
+in the specified demangler library to demangle C++ names. 
+This option may only be given if the <tt>--demangle-library</tt>
+option is also given. 
+<p>
+</dd>
+<dt><b>-I</b> <i>path</i>, <b>--include</b> <i>path</i>
+</dt>
+<dd> 
+Use <i>path</i>
+when resolving source file names. 
+This option is useful when a compiler records the same filename in different ways within the symbolic information. 
+(Yes, this does happen.) 
+For a recursive search, append a '+' after the last slash, e.g., <tt>/mypath/+</tt>.
+This option may appear multiple times. 
+<p>
+</dd>
+<dt><b>-R</b> <i>'old-path=new-path'</i>, <b>--replace-path</b> <i>'old-path=new-path'</i>
+</dt>
+<dd> 
+Replace instances of <i>old-path</i>
+with <i>new-path</i>
+in all paths with <i>old-path</i>
+is a prefix 
+(e.g., a profile's load map and source code). 
+Use <tt>'\'</tt> to escape instances of '=' within specified paths. 
+This option may appear multiple times. 
+<p>
+Use this when a profile or executable references files that have been relocated, 
+such as might occur with a file system change. 
+<p>
+</dd>
+</dl>
+<p>
+<h4><a name="section_6">Options: Output</a></h4>
+
+<p>
+<dl compact>
+<p>
+<dt><b>-o</b> <i>file</i>, <b>--output</b> <i>file</i>
+</dt>
+<dd> 
+Write results to <i>file</i>.
+Use '-' for <tt>stdout</tt>.
+{<i>basename(binary)</i><tt>.hpcstruct</tt>}
+<p>
+</dd>
+<dt><b>--compact</b>
+</dt>
+<dd> 
+Generate compact output by eliminating extra white space. 
+<p>
+</dd>
+<dt><b>--show-gaps</b>
+</dt>
+<dd> 
+Write a text file describing all the "gaps" found by <tt>hpcstruct</tt>,
+i.e. address regions not identified as belonging to a code or data segment 
+by the ParseAPI parser used to analyze application executables. 
+The file is named <em>outfile</em><tt>.gaps</tt>,
+which by default is <em>appname</em><tt>.hpcstruct.gaps</tt>.
+A gaps file can't be written when <em>outfile</em>
+is <tt>stdout</tt>.
+<p>
+</dd>
+</dl>
+<p>
+<h2><a name="section_7">Examples</a></h2>
+
+<p>
+Assume we have collected profiling information for the (optimized) binary <tt>sweep3dsingle</tt>,
+compiled with debugging information. 
+We wish to recover program structure in the file <tt>sweep3dsingle.hpcstruct</tt>
+for use with <a href="hpcprof.html"><em>hpcprof</em>(1)
+</a>.
+To do this, execute: 
+<p>
+<pre>
+    hpcstruct sweep3dsingle
+</pre>
+<p>
+By defult the output is placed in a file named <tt>sweep3dsingle.hpcstruct</tt>.
+<p>
+<h2><a name="section_8">Notes</a></h2>
+
+<p>
+<ol compact>
+<p>
+<li value =1>For best results, an application binary should be compiled with debugging information. 
+To generate debugging information while also enabling optimizations, 
+use the appropriate variant of <tt>-g</tt> for the following compilers: 
+<ul compact>
+<li>GNU compilers: <tt>-g</tt> 
+</li>
+<li>Intel compilers: <tt>-g -debug inline_debug_info</tt> 
+</li>
+<li>IBM compilers: <tt>-g -fstandalone-debug -qfulldebug -qfullpath</tt> 
+</li>
+<li>PGI compilers: <tt>-gopt</tt> 
+</li>
+</ul>
+<p>
+</li>
+<li value =2>While <tt>hpcstruct</tt> attempts to guard against inaccurate debugging information,
+some compilers (notably PGI's) often generate invalid and inconsistent debugging information. 
+Garbage in; garbage out. 
+<p>
+</li>
+<li value =3>C++ mangling is compiler specific. On non-GNU platforms, <tt>hpcstruct</tt>
+tries both platform's and GNU's demangler. 
+<p>
+</li>
+</ol>
+<p>
+<h2><a name="section_9">See Also</a></h2>
+
+<p>
+<a href="hpctoolkit.html"><em>hpctoolkit</em>(1)
+</a>.
+<p>
+<h2><a name="section_10">Version</a></h2>
+
+<p>
+Version: develop
+<p>
+<h2><a name="section_11">License and Copyright</a></h2>
+
+<p>
+<dl compact>
+<dt>Copyright</dt>
+<dd> &copy; 2002-2019, Rice University. 
+</dd>
+<dt>License</dt>
+<dd> See <tt>README.License</tt>.
+</dd>
+</dl>
+<p>
+<h2><a name="section_12">Authors</a></h2>
+
+<p>
+Rice University's HPCToolkit Research Group <br>
+
+Email: <a href ="mailto:hpctoolkit-forum =at= rice.edu"><tt>hpctoolkit-forum =at= rice.edu</tt></a>
+<br>
+WWW: <a href ="http://hpctoolkit.org"><tt>http://hpctoolkit.org</tt></a>.
+<p>
+Thanks to Gabriel Marin and Jason Eckhardt. 
+<p>
+</body>
+</html>
+<!-- NOTE: This file is generated, DO NOT EDIT. -->
